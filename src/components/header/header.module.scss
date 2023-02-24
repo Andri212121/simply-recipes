@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 78px;
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #FFD977;
+}
+
+.nav {
+  display: flex;
+
+  .navBar {
+    display: flex;
+
+    .navButton {
+      margin-right: 16px;
+      font-family: Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+
+      .navButtonContent {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      img {
+        margin-left: 5px;
+        padding-top: 3px;
+      }
+
+      .dropdownContent {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #FFFFFF;
+        z-index: 1;
+        border: solid 1px #FFD977;
+        box-shadow: 3px 3px 0 0 rgba(0,0,0,0.15);
+        margin-top: -8px;
+        margin-left: 8px;
+
+        a {
+          width: 200px;
+          text-decoration: none;
+          font-family: Roboto, sans-serif;
+          color: #222;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          padding: 8px 15px;
+        }
+
+        a:hover {
+          background-color: #FFD977;
+          text-decoration: underline;
+        }
+        .bold {
+          font-weight: 500;
+        }
+
+
+      }
+    }
+    .navButton:hover {
+      cursor: pointer;
+      .dropdownContent {display: flex;}
+      li {
+        border-bottom: solid 3px #FFD977;
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 226px;
+  height: 100%;
+
+  img {
+    padding-top: 5px;
+    padding-left: 8px;
+    width: 184px;
+    height: 60px;
+  }
+}
+
+.saveAndSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+
+  .saveButton {
+    margin-right: 20px;
+
+    svg {
+      fill: none;
+      width: auto;
+      height: 20px;
+      stroke-width: 2.2;
+    }
+
+    svg:hover {
+      fill: #D86D38;
+      cursor: pointer;
+    }
+  }
+
+  .searchButton {
+    svg {
+      fill: none;
+      width: auto;
+      height: 24px;
+    }
+
+    svg:hover {
+      cursor: pointer;
+    }
+  }
+}
