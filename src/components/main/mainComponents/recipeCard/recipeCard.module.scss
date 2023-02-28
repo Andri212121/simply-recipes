@@ -1,0 +1,101 @@
+.recipeCard {
+  width: 272px;
+  //height: 422px;
+  background: #FFFFFF;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .cardImg {
+    background-size: cover;
+    background-position: 50%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .recipeCardContent {
+    margin: 0 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+
+    .cardTag {
+      margin-top: 2px;
+
+      span {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 30px;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #b64a14;
+      }
+    }
+
+    .underline {
+
+      span {
+        font-family: 'Frank Ruhl Libre', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 31px;
+
+        display: flex;
+        align-items: center;
+
+        color: #222222;
+      }
+    }
+
+    .meta {
+      display: flex;
+      margin-bottom: 18px;
+      margin-top: 18px;
+      align-items: flex-end;
+
+      span {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        display: flex;
+        align-items: center;
+
+        color: #616161;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.recipeCard:hover {
+  animation: riverCard 100ms;
+  border-right: 5px solid #FFD977;
+  border-bottom: 5px solid #FFD977;
+}
+
+@keyframes riverCard {
+  from {
+    border-right: 0 solid #FFD977;
+    border-bottom: 0 solid #FFD977;
+  }
+  to {
+    border-right: 5px solid #FFD977;
+    border-bottom: 5px solid #FFD977;
+  }
+}
+
