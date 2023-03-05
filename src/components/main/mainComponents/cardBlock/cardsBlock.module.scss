@@ -1,0 +1,61 @@
+.section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  //padding-bottom: 40px;
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+
+  svg {
+    margin-left: 8px;
+    fill: #B5460F;
+  }
+
+  span {
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.2px;
+
+    color: #222222;
+    border-bottom: 5px solid #FFD977;
+  }
+}
+
+.sectionTitle:hover {
+  span {
+    border-color: #D86D38;
+  }
+
+  svg {
+    fill: #004c42;
+  }
+}
+
+.container {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: 100%;
+  grid-column-gap: 30px;
+  grid-row-gap: 0;
+}

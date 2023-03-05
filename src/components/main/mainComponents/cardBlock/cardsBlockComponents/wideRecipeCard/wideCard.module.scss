@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 370px;
+  background-color: #FFFFFF;
+
+  .cardImg {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content {
+    padding: 4px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cardTag {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #B5460F;
+  }
+
+  .cardTitle {
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+
+    display: flex;
+    align-items: center;
+
+    color: #222222;
+  }
+
+  .timeAndStar {
+    display: flex;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+
+    .timer {
+      display: flex;
+    }
+
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      display: flex;
+      align-items: center;
+
+      color: #616161;
+      margin-left: 5px;
+    }
+  }
+}
+
+.card:hover {
+  animation: riverCard 150ms;
+  box-shadow: 5px 5px 0 0 #FFD954FF;
+  cursor: pointer;
+  //border-right: 5px solid #FFD977;
+  //border-bottom: 5px solid #FFD977;
+}
+
+@keyframes riverCard {
+  from {
+    box-shadow: 0 0 0 0 #FFD954FF;
+    //border-right: 0 solid #FFD977;
+    //border-bottom: 0 solid #FFD977;
+  }
+  to {
+    box-shadow: 5px 5px 0 0 #FFD954FF;
+    //border-right: 5px solid #FFD977;
+    //border-bottom: 5px solid #FFD977;
+  }
+}

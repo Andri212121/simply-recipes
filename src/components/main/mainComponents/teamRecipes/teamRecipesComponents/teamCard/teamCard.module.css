@@ -1,0 +1,50 @@
+.teamCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.teamCard .name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #004D4D;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 7px;
+  margin-bottom: 3px;
+}
+.teamCard .role {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 124% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #117777;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.teamCard img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  border: 1px solid #004c42;
+}
+
+/*# sourceMappingURL=teamCard.module.css.map */

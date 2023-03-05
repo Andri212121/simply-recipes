@@ -17,7 +17,7 @@
   }
 
   .recipeCardContent {
-    margin: 0 40px 0 20px;
+    margin: 0 20px 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,11 +59,17 @@
       }
     }
 
-    .meta {
+    .timeAndStar {
       display: flex;
       margin-bottom: 18px;
       margin-top: 18px;
       align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+
+      .timer {
+        display: flex;
+      }
 
       span {
         font-family: 'Roboto', sans-serif;
@@ -83,19 +89,23 @@
 }
 
 .recipeCard:hover {
-  animation: riverCard 100ms;
-  border-right: 5px solid #FFD977;
-  border-bottom: 5px solid #FFD977;
+  animation: riverCard 150ms;
+  box-shadow: 5px 5px 0 0 #FFD954FF;
+  cursor: pointer;
+  //border-right: 5px solid #FFD977;
+  //border-bottom: 5px solid #FFD977;
 }
 
 @keyframes riverCard {
   from {
-    border-right: 0 solid #FFD977;
-    border-bottom: 0 solid #FFD977;
+    box-shadow: 0 0 0 0 #FFD954FF;
+    //border-right: 0 solid #FFD977;
+    //border-bottom: 0 solid #FFD977;
   }
   to {
-    border-right: 5px solid #FFD977;
-    border-bottom: 5px solid #FFD977;
+    box-shadow: 5px 5px 0 0 #FFD954FF;
+    //border-right: 5px solid #FFD977;
+    //border-bottom: 5px solid #FFD977;
   }
 }
 

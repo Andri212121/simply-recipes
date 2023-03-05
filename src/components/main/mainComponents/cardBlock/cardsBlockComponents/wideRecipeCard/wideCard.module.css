@@ -1,31 +1,22 @@
-.recipeCard {
-  width: 272px;
-  background: #FFFFFF;
-  margin-bottom: 30px;
+.card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-.recipeCard .cardImg {
-  background-size: cover;
-  background-position: 50%;
-}
-.recipeCard .cardImg img {
   height: 100%;
+  width: 370px;
+  background-color: #FFFFFF;
+}
+.card .cardImg img {
   width: 100%;
+  height: 100%;
 }
-.recipeCard .recipeCardContent {
-  margin: 0 20px 0 20px;
+.card .content {
+  padding: 4px 20px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  height: 100%;
 }
-.recipeCard .recipeCardContent .cardTag {
-  margin-top: 2px;
-}
-.recipeCard .recipeCardContent .cardTag span {
+.card .cardTag {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -35,9 +26,9 @@
   align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #b64a14;
+  color: #B5460F;
 }
-.recipeCard .recipeCardContent .underline span {
+.card .cardTitle {
   font-family: "Frank Ruhl Libre", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -47,7 +38,7 @@
   align-items: center;
   color: #222222;
 }
-.recipeCard .recipeCardContent .timeAndStar {
+.card .timeAndStar {
   display: flex;
   margin-bottom: 18px;
   margin-top: 18px;
@@ -55,10 +46,10 @@
   justify-content: space-between;
   width: 100%;
 }
-.recipeCard .recipeCardContent .timeAndStar .timer {
+.card .timeAndStar .timer {
   display: flex;
 }
-.recipeCard .recipeCardContent .timeAndStar span {
+.card .timeAndStar span {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -70,7 +61,7 @@
   margin-left: 5px;
 }
 
-.recipeCard:hover {
+.card:hover {
   animation: riverCard 150ms;
   box-shadow: 5px 5px 0 0 #ffd954;
   cursor: pointer;
@@ -85,4 +76,4 @@
   }
 }
 
-/*# sourceMappingURL=recipeCard.module.css.map */
+/*# sourceMappingURL=wideCard.module.css.map */

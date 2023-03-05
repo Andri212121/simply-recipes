@@ -1,0 +1,80 @@
+.section {
+  height: 450px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 0;
+  margin-top: 50px;
+}
+.section .content {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100%;
+  background-image: url("./../../../../assets/img/desktop-dots.png");
+  background-size: 100%;
+  padding: 20px 40px;
+}
+.section .content .information {
+  padding-right: 50px;
+}
+.section .content .information .title {
+  margin-top: 30px;
+  font-family: "Frank Ruhl Libre", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+.section .content .information .text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #222222;
+  margin-top: 20px;
+}
+.section .content .information .readMore button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 7px 7px 10px;
+  background: #FFE7D9;
+  border: none;
+  border-radius: 3px;
+}
+.section .content .information .readMore button span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222222;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.section .content .team {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background-color: rgba(255, 196, 161, 0.4);
+  padding: 30px 10px 30px 10px;
+}
+
+/*# sourceMappingURL=teamRecipes.module.css.map */

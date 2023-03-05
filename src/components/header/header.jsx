@@ -1,6 +1,6 @@
 import s from './header.module.css'
 import logo from './../../assets/img/logo.svg'
-import arrow from './../../assets/img/arrow.svg'
+import arrow from '../../assets/img/svg/arrow.svg'
 import {NavLink} from "react-router-dom";
 
 let Header = () => {
